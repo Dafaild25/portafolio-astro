@@ -1,5 +1,6 @@
 ---
 // src/components/Navbar.astro
+import logo from '../assets/logo-eday.png'; // ajusta el path
 ---
 
 <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md shadow-md">
@@ -7,7 +8,7 @@
 
     <!-- Logo -->
     <a href="#heroSplit" class="flex items-center gap-2">
-      <img src="/src/assets/logo-eday.png" alt="Logo EDAY" class="h-10 w-auto" />
+      <img src={logo.src} alt="Logo EDAY" class="h-8 w-auto" />
       <!-- <span class="text-white font-bold text-xl">David</span> -->
     </a>
 
