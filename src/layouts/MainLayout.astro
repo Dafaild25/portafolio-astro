@@ -1,0 +1,25 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David</title>
+  </head>
+
+  <body class="bg-gray-950 text-white font-sans">
+    <slot />
+
+    <!-- Script de AOS correctamente dentro del body -->
+    <script type="module">
+        import AOS from 'aos';
+        AOS.init({
+          duration: 1000, // duración de animación en ms
+          once: true      // solo una vez al entrar
+        });
+      </script>
+  </body>
+</html>

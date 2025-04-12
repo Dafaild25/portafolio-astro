@@ -1,0 +1,50 @@
+---
+// src/components/Projects.astro
+import logoInstituto from '../assets/instituto-cotopaxi.png';
+import logoUTC from '../assets/utc.png';
+import logoColegio from '../assets/barba.png';
+---
+
+<section id="portfolio" class="py-5 bg-gray-50 text-gray-900">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12">Formación Académica</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Colegio Ramón Barba Naranjo -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+        <img src={logoColegio.src} alt="Colegio Ramón Barba Naranjo" class="h-20 mb-4 object-contain" />
+        <h3 class="text-xl font-bold text-cyan-600 mb-2">Colegio Técnico Ramón Barba Naranjo</h3>
+        <p class="text-sm text-gray-700">
+          Bachillerato Técnico en Equipos y Máquinas Eléctricas  
+          <br />
+          Instalaciones basicas eléctricas
+        </p>
+      </div>
+
+      <!-- Instituto Cotopaxi -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+        <img src={logoInstituto.src} alt="Instituto Cotopaxi" class="h-20 mb-4 object-contain" />
+        <h3 class="text-xl font-bold text-cyan-600 mb-2">Instituto Superior Tecnológico Cotopaxi</h3>
+        <p class="text-sm text-gray-700">
+          Tecnología en Electromecánica  
+          <br />
+          Formación técnica en soldadura básica, motores electricos.
+        </p>
+      </div>
+
+      <!-- Universidad Técnica de Cotopaxi -->
+      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center">
+        <img src={logoUTC.src} alt="Universidad Técnica de Cotopaxi" class="h-20 mb-2 object-contain" />
+        <h3 class="text-xl font-bold text-cyan-600 mb-2">Universidad Técnica de Cotopaxi</h3>
+        <p class="text-sm text-gray-700">
+          Ingeniería en Sistemas de Información  
+          <br />
+          Conocimientos en arquitectura de software, bases de datos e infraestructura.
+        </p>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
