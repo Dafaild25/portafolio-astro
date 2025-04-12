@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>David</title><link rel="stylesheet" href="/portafolio-astro/_astro/index.BfnkDQFD.css"></head> <body class="bg-gray-950 text-white font-sans">  <nav class="sticky top-0 z-50 bg-black/80 backdrop-blur-md shadow-md"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between"> <!-- Logo --> <a href="#heroSplit" class="flex items-center gap-2"> <img src="/src/assets/logo-eday.png" alt="Logo EDAY" class="h-10 w-auto"> <!-- <span class="text-white font-bold text-xl">David</span> --> </a> <!-- Menú para escritorio --> <ul class="hidden md:flex space-x-6 text-sm font-medium text-white"> <li><a href="#heroSplit" class="hover:text-cyan-400 transition">Inicio</a></li> <li><a href="#about" class="hover:text-cyan-400 transition">Sobre mí</a></li> <li><a href="#portfolio" class="hover:text-cyan-400 transition">Formación</a></li> <li><a href="#contact" class="hover:text-cyan-400 transition">Contacto</a></li> </ul> <!-- Botón hamburguesa (móvil) --> <button class="md:hidden text-white text-2xl focus:outline-none" id="menu-button">
+☰
+</button> </div> <!-- Menú desplegable móvil --> <ul id="mobile-menu" class="hidden flex-col md:hidden bg-black/90 px-6 py-4 text-white space-y-4 text-center"> <li><a href="#heroSplit" class="block hover:text-cyan-400">Inicio</a></li> <li><a href="#about" class="block hover:text-cyan-400">Sobre mí</a></li> <li><a href="#portfolio" class="block hover:text-cyan-400">Formación</a></li> <li><a href="#contact" class="block hover:text-cyan-400">Contacto</a></li> </ul> <!-- Script para mostrar/ocultar menú móvil --> <script>
+    const btn = document.getElementById('menu-button');
+    const menu = document.getElementById('mobile-menu');
+  
+    // Alternar el menú al hacer clic en el botón hamburguesa
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  
+    // Seleccionar todos los enlaces dentro del menú móvil
+    const links = menu.querySelectorAll('a');
+  
+    // Agregar evento a cada enlace
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden'); // Oculta el menú al hacer clic
+      });
+    });
+  </script> </nav> <section id="heroSplit" class="relative w-full min-h-screen bg-no-repeat bg-cover bg-center bg-hero-mobile"> <!-- Fondo blanco solo para móviles --> <div class="relative z-10 flex items-center justify-center w-full h-full"> <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-7xl w-full px-4 py-5 md:py-32 text-black"> <!-- Diseñador --> <div class="flex flex-col justify-center items-start text-left md:pl-12 animate-slideInLeft"> <h2 class="text-4xl font-bold mb-4 md:py-32  drop-shadow-md">Ing. Sistemas de Información</h2> <p class="text-xl  max-w-sm drop-shadow-sm">
+Apasionado por la creación de experiencias digitales intuitivas, combinando lógica, diseño y tecnología.
+</p> </div> <!-- Coder --> <div class="flex flex-col justify-center items-end text-right md:pr-12 animate-slideInRight"> <h2 class="text-4xl font-bold mb-4 md:py-32  drop-shadow-md">&lt;Coder&gt;</h2> <p class="text-xl  max-w-sm drop-shadow-sm">
+Desarrollador web junior con bases sólidas en HTML, CSS, JavaScript.
+</p> </div> </div> </div> </section> <section id="about" class="py-20 bg-white text-gray-800"> <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"> <!-- Texto --> <div> <h2 class="text-4xl font-bold mb-4">Sobre mí</h2> <p class="text-lg leading-relaxed mb-6">
+¡Hola! Soy <span class="font-semibold text-cyan-600">David Aimacaña</span>, desarrollador frontend y diseñador UI con pasión por crear experiencias digitales modernas, limpias y efectivas.  
+          Me encanta combinar estética con funcionalidad, y trabajar en proyectos donde cada detalle cuenta.
+</p> <ul class="grid grid-cols-2 gap-4 text-sm text-gray-700 mb-6"> <li>✅ Django</li> <li>✅ Frontend con Astro, Tailwind y Bootstrap</li> <li>✅ Responsive Web Design</li> <li>✅ JavaScript moderno</li> <li>✅ Git y GitHub</li> <li>✅ Optimización de rendimiento</li> </ul> <div class="text-sm text-gray-500 italic">
+“Diseñar no es solo cómo se ve, sino cómo funciona.”
+</div> </div> <!-- Estadísticas (puedes personalizar) --> <div class="grid grid-cols-2 gap-6 text-center"> <div> <p class="text-3xl font-bold text-cyan-600">+2 Titulos</p> <p class="text-sm">De tercer nivel </p> </div> <div> <p class="text-3xl font-bold text-cyan-600">+8 meses</p> <p class="text-sm">de experiencia</p> </div> <div> <p class="text-3xl font-bold text-cyan-600">100%</p> <p class="text-sm">Responsivo</p> </div> <div> <p class="text-3xl font-bold text-cyan-600">UI + Code</p> <p class="text-sm">Diseño y desarrollo</p> </div> </div> </div> </section> <section id="portfolio" class="py-5 bg-gray-50 text-gray-900"> <div class="max-w-6xl mx-auto px-6"> <h2 class="text-4xl font-bold text-center mb-12">Formación Académica</h2> <div class="grid grid-cols-1 md:grid-cols-3 gap-8"> <!-- Colegio Ramón Barba Naranjo --> <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center"> <img src="/portafolio-astro/_astro/barba.2IGkUFdT.png" alt="Colegio Ramón Barba Naranjo" class="h-20 mb-4 object-contain"> <h3 class="text-xl font-bold text-cyan-600 mb-2">Colegio Técnico Ramón Barba Naranjo</h3> <p class="text-sm text-gray-700">
+Bachillerato Técnico en Equipos y Máquinas Eléctricas
+<br>
+Instalaciones basicas eléctricas
+</p> </div> <!-- Instituto Cotopaxi --> <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center"> <img src="/portafolio-astro/_astro/instituto-cotopaxi.C33ADVbH.png" alt="Instituto Cotopaxi" class="h-20 mb-4 object-contain"> <h3 class="text-xl font-bold text-cyan-600 mb-2">Instituto Superior Tecnológico Cotopaxi</h3> <p class="text-sm text-gray-700">
+Tecnología en Electromecánica
+<br>
+Formación técnica en soldadura básica, motores electricos.
+</p> </div> <!-- Universidad Técnica de Cotopaxi --> <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition flex flex-col items-center text-center"> <img src="/portafolio-astro/_astro/utc.CwM5N7jJ.png" alt="Universidad Técnica de Cotopaxi" class="h-20 mb-2 object-contain"> <h3 class="text-xl font-bold text-cyan-600 mb-2">Universidad Técnica de Cotopaxi</h3> <p class="text-sm text-gray-700">
+Ingeniería en Sistemas de Información
+<br>
+Conocimientos en arquitectura de software, bases de datos e infraestructura.
+</p> </div> </div> </div> </section> <section id="contact" class="py-10   bg-white text-gray-900"> <div class="max-w-6xl mx-auto px-6"> <h2 class="text-4xl font-bold text-center mb-12">Contáctame</h2> <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start"> <!-- Info de contacto --> <div class="flex flex-col gap-6"> <div> <h3 class="text-lg font-semibold mb-1">Correo</h3> <p class="text-gray-700">davidmgrbn@gmail.com</p> </div> <div> <h3 class="text-lg font-semibold mb-1">Teléfono</h3> <p class="text-gray-700">+593 958 705 974</p> </div> <div> <h3 class="text-lg font-semibold mb-1">Ubicación</h3> <p class="text-gray-700">Latacunga, Cotopaxi - Ecuador</p> </div> <div class="flex gap-4 mt-2"> <a href="#" target="_blank" class="text-cyan-600 hover:text-cyan-800 transition">Facebook</a> <a href="#" target="_blank" class="text-cyan-600 hover:text-cyan-800 transition">Tiktok</a> </div> </div> <!-- Formulario --> <form class="bg-gray-100 p-6 rounded-xl shadow space-y-4"> <input type="text" placeholder="Tu nombre" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring focus:ring-cyan-300"> <input type="email" placeholder="Tu correo" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring focus:ring-cyan-300"> <textarea placeholder="Tu mensaje" rows="5" class="w-full px-4 py-2 rounded border focus:outline-none focus:ring focus:ring-cyan-300"></textarea> <button type="submit" class="w-full bg-cyan-600 text-white py-2 rounded hover:bg-cyan-700 transition">
+Enviar mensaje
+</button> </form> </div> </div> </section> <footer class="bg-gray-950 text-white py-6"> <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-400"> <!-- Texto de derechos --> <p>&copy; 2025 David Aimacaña. Todos los derechos reservados.</p> <!-- Redes opcionales --> <div class="flex gap-4"> <a href="https://linkedin.com" target="_blank" class="hover:text-white transition">LinkedIn</a> <a href="https://github.com" target="_blank" class="hover:text-white transition">GitHub</a> <a href="#contact" class="hover:text-white transition">Contáctame</a> </div> </div> </footer>  <!-- Script de AOS correctamente dentro del body --> <script type="module">
+        import AOS from 'aos';
+        AOS.init({
+          duration: 1000, // duración de animación en ms
+          once: true      // solo una vez al entrar
+        });
+      </script> </body> </html>
