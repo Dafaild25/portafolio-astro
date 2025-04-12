@@ -1,10 +1,10 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 
-const isDev = process.env.NODE_ENV === 'development';
+
 
 export default defineConfig({
-    output: 'static',
-    base: isDev ? '/' : '/portafolio-astro/',
+    site: 'https://dafaild25.github.io',
+    base:'portafolio-astro',
     integrations: [tailwind()],
 });
